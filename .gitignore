@@ -30,6 +30,7 @@ build/
 *.class
 
 # Generated files
+*.jar
 *.war
 *.ear
 
