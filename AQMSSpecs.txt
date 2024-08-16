@@ -1,0 +1,169 @@
+specs of 4 methods: 
+-- register
+-- login
+-- assign_role
+-- get_data
+
+Following, some brief descriptipns of methods that the students may use when writing test cases. 
+For details, please refer to the comments on top of the corresponding code implementation:
+-- isUser
+-- addData
+-- isAuthenticated
+-- getRole
+
+----------------------------------------------------------------------------------------------------
+
+register:
+
+Registers a new user with an authentication status of NOT_AUTHENTICATED, role as default USER and 
+an empty default resource (empty data record). We do not take role as an input when registering. 
+The following requirements must be met:
+
+Signature:
+  public void register(String username, String password, String deviceID)
+      throws DuplicateUserException, InvalidUsernameException, InvalidPasswordException, 
+	         InvalidDeviceIDException
+
+Parameters:
+- username: The username for the user to be added.
+- password: The password for the user.
+- deviceID: The physical device ID used for two-factor authentication.
+
+Requirements:
+
+- Username: 
+  - Must be at least four characters long.
+  - Must contain only lower- and upper-case letters.
+
+- Password:
+  - Must be at least eight characters long.
+  - Must contain at least one letter (a-z, A-Z).
+  - Must contain at least one digit (0-9).
+  - Must contain at least one special character (anything other than a-z, A-Z, or 0-9).
+
+- Device ID (for two-factor authentication):
+  - Must be exactly four characters long.
+  - Must contain only numeric digits (0-9).
+
+Exceptions (thrown in order):
+- DuplicateUserException: Thrown if the username is already registered.
+- InvalidUsernameException: Thrown if the username does not meet the specified requirements.
+- InvalidPasswordException: Thrown if the password does not meet the specified requirements.
+- InvalidDeviceIDException: Thrown if the device ID does not meet the specified requirements.
+
+for example:
+-- DuplicateUserException is thrown first (i.e. existing usernames are all valid)
+-- if username is invalid, then we do not check for valid password, or device ID
+-- is username is valid, then we check for valid password
+-- if both username and passwords are valid, then we check for valid device ID
+
+Assumptions:
+username, password, and deviceID are non-null.
+
+
+
+
+----------------------------------------------------------------------------------------------------
+
+login:
+
+Logs a user in using their username, password, and device ID, and returns their authentication status.
+Please note that for login, role is not required as an input.
+
+Signature:
+public AuthenticationStatus login(String username, String password, String deviceID)
+ 	throws NoSuchUserException, IncorrectPasswordException, IncorrectDeviceIDException
+
+Parameters:
+- username: The username.
+- password: The password.
+- deviceID: The device ID.
+
+Returns:
+NOT_AUTHENTICATED if any of the following conditions are true:
+  - The username does not exist.
+  - The password is incorrect.
+  - The device ID is incorrect.
+	Note: This method does not validate whether the username, password, or device ID are following the requirements in the register method,
+	it assumes that they are already valid.
+	
+AUTHENTICATED if and only if all of the following conditions are true:
+  - The username exists.
+  - The password is correct.
+  - The device ID is correct.
+
+Assumption: username, password, and deviceID are non-null. username, password and deviceID are all valid 
+
+Exceptions (thrown in order):
+- NoSuchUserException: Thrown if the username is not registered.
+- IncorrectPasswordException: Thrown if the password doesn't match the username.
+- IncorrectDeviceIDException: Thrown if the DeviceID doesn't match the username.
+
+for example:
+-- NoSuchUserException is thrown first
+-- if username is present, and password is not correct, then IncorrectPasswordException is thrown, and 
+   we do not check for correct device ID
+-- lastly we check for device ID and IncorrectDeviceIDException is thrown in device ID is incorrect
+
+
+----------------------------------------------------------------------------------------------------
+
+
+assignRole:
+
+Assign the given role {ADMIN, USER} to an existing user. ADMIN is considered an upgraded role from USER. 
+The system compare the existing role of that user, and accepts the assignment when the new role is not a downgrade. 
+Once assigned, our system registers the role for the given username. 
+
+This function is there for the IT team, hence its not called by any of the registered user. 
+IT team assigns a role to an existing user only with its username (deviceID  or passwords are not required).
+If the user is not registered, NoSuchUserException is generated. The role of an existing user can only be 
+upgraded or remain the same, if the new role is a downgrade to the original role, 
+InvalidAssignedRoleExcetion is generated.
+
+Signature:
+  public void assign_role(String username, Role role)
+      throws NoSuchUserException
+
+Parameters:
+- username: The username.
+- role: The role.
+
+Requirements:
+role is either ADMIN, USER. The default role of a newly registered user is USER. Any other input for role is un-testable.
+For example, Role cannot be PRINCIPLE, or None, or User or any other string other than
+ADMIN, USER. 
+
+Exceptions:
+- NoSuchUserException: Thrown if the username is not registered.
+- InvalidAssignedRoleExcetion: Thrown if the new role is a downgrade. 
+
+Assumption: username and role are non-null.
+
+
+----------------------------------------------------------------------------------------------------
+
+
+getData:
+
+Reads a record for a user if user is authenticated and assigned role is ADMIN.
+The record at 'index' is returned. The data is unchanged.
+
+Signature:
+  public List<Integer> getData(String username, int index)
+            throws NoSuchUserException, UnauthenticatedUserException, AccessRightException, IndexOutOfBoundsException
+
+Parameters:
+- username: The username.
+- index: the index of the record to be read
+
+Exceptions (thrown in order):
+- NoSuchUserException: Thrown if the username is not registered
+- UnauthenticatedUserException: Thrown if the username is not authenticated
+- AccessRightException: Thrown if the username is authenticated but assigned role is USER
+- java.lang.IndexOutOfBoundsException:  if the index is not in [0, len(data)-1]
+
+Assumptions:username and role are non-null
+
+
+----------------------------------------------------------------------------------------------------

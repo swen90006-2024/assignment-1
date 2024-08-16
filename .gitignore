@@ -1,0 +1,38 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/**/usage.statistics.xml
+.idea/**/shelf
+
+# OS-specific stuff:
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Exclude all build directories
+/build/
+out/
+
+# Gradle
+.gradle
+build/
+
+# Class files
+*.class
+
+# Generated files
+*.jar
+*.war
+*.ear
+
+# Dependency cache
+.depcache/
