@@ -81,9 +81,8 @@ Parameters:
 
 Returns:
 NOT_AUTHENTICATED if any of the following conditions are true:
-  - The username does not exist.
-  - The password is incorrect.
-  - The device ID is incorrect.
+  - The password is incorrect (doesn't match with the registered username).
+  - The device ID is incorrect (doesn't match with the registered username).
 	Note: This method does not validate whether the username, password, or device ID are following the requirements in the register method,
 	it assumes that they are already valid.
 	
@@ -123,7 +122,7 @@ InvalidAssignedRoleExcetion is generated.
 
 Signature:
   public void assign_role(String username, Role role)
-      throws NoSuchUserException
+      throws NoSuchUserException InvalidAssignedRoleException
 
 Parameters:
 - username: The username.

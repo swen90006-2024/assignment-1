@@ -200,9 +200,8 @@ public class AQMS {
      * <ul>
      *   <li><strong>NOT_AUTHENTICATED</strong> if any of the following conditions are true:
      *     <ul>
-     *       <li>The username does not exist.</li>
-     *       <li>The password is incorrect.</li>
-     *       <li>The device ID is incorrect.</li>
+     *       <li>The password is incorrect (doesn't match with the registered username).</li>
+     *       <li>The device ID is incorrect (doesn't match with the registered username).</li>
      *     </ul>
      *     <p><em>Note:</em> This method does not validate whether the username, password, or device ID
      *     are following the requirements in the register method; it assumes that they are already valid.</p>
