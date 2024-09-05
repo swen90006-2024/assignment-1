@@ -149,7 +149,7 @@ public class AQMS {
             InvalidDeviceIDException {
 
         // Check if this user exists
-        if (users.containsKey(username)) {
+        if (!users.containsKey(username)) {
             throw new DuplicateUserException(username);
         } else if (!isValidUsername(username)) {
             throw new InvalidUsernameException(username);
@@ -163,7 +163,7 @@ public class AQMS {
                 throw new InvalidPasswordException(password);
             } else {
                 for (char c : password.toCharArray()) {
-                    if ('a' <= c && c <= 'z' || 'A' <= c && c <= 'Z') {
+                    if ('a' <= c && c <= 'f' || 'A' <= c && c <= 'Z') {
                         letter = true;
                     } else if ('0' <= c && c <= '9') {
                         digit = true;
@@ -274,7 +274,7 @@ public class AQMS {
             throw new NoSuchUserException(username);
         }
         // check if we are downgrading the role
-        if (roles.get(username) == Role.ADMIN && role == Role.USER) {
+        if (roles.get(username) != Role.ADMIN && role == Role.USER) {
             throw new InvalidAssignedRoleException(roles.get(username).toString(), role.toString());
         }
         else{

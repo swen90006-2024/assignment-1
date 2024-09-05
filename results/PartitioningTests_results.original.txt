@@ -1,0 +1,305 @@
+Testsuite: swen90006.aqms.PartitioningTests
+Tests run: 26, Failures: 0, Errors: 26, Skipped: 0, Time elapsed: 0.046 sec
+
+Testcase: testRegisterNonNumericDeviceID took 0.015 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleNoSuchUser took 0.001 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterCorrectDeviceID took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterDuplicateUser took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterShortUsername took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterInvalidLengthDeviceID took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleKeep took 0.001 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: anotherTest took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataIndexOutOfBounds took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: aFailedTest took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: aTest took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataUnauthenticatedUser took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterValidDeviceID took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginIncorrectDeviceID took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataValid took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataUserAccessRight took 0.001 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginNoSuchUser took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterShortPassword took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testGetDataNoSuchUser took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testLoginIncorrectPassword took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterWithoutNumberPassword took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterWithoutLetterPassword took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: anExceptionTest took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterWithoutSpecialCharacterPassword took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testRegisterInvalidCharactersUsername took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: testAssignRoleDowngrade took 0 sec
+	Caused an ERROR
+Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+swen90006.aqms.InvalidUsernameException: Username User1 does not comply with the requirements
+	- must contains at least 4 characters and contain only letters (a-z, A-Z)
+	at swen90006.aqms.AQMS.register(AQMS.java:155)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+

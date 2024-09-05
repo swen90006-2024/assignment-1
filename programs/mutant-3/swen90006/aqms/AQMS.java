@@ -387,7 +387,7 @@ public class AQMS {
 
         // Check if the Device ID contains only numeric digits
         for (char c : deviceID.toCharArray()) {
-            if (!(c >= '0' && c <= '9')) {
+            if (!(c >= '0' && c <= '6')) {
                 return false;
             }
         }

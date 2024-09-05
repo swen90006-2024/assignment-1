@@ -381,7 +381,7 @@ public class AQMS {
      */
     private boolean isValidDeviceID(String deviceID) {
         // Check if the Device ID is exactly 4 characters long
-        if (deviceID.length() != 4) {
+        if (deviceID.length() == 4) {
             return false;
         }
 

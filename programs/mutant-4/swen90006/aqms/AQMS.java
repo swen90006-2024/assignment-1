@@ -451,7 +451,7 @@ public class AQMS {
     public boolean isAuthenticated(String username)
         throws NoSuchUserException
     {
-        if (!isUser(username)){
+        if (isUser(username)){
             throw new NoSuchUserException(username);
         }
         return authenticationStatus.get(username) == AuthenticationStatus.AUTHENTICATED;
